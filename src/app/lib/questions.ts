@@ -161,17 +161,6 @@ export function getAllQuestions(mode: PracticeMode): Question[] {
         ],
         "explanation": "Soft actuators are polymer based.",
         "correctAnswer": 0
-      },
-      {
-        "question": "Which of the following is a building block of edge computing?",
-        "options": [
-          "Data ingestion and stream processing",
-          "Centralized data centers",
-          "High-bandwidth CDN",
-          "Traditional three-tier architecture"
-        ],
-        "explanation": "Edge computing requires efficient data ingestion (e.g., using Kafka) and stream processing for real-time data analysis. These are key building blocks for processing data at the edge, as opposed to sending data to the cloud for processing.",
-        "correctAnswer": 0
       }
     ],
     week2: [
