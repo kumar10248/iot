@@ -1578,6 +1578,386 @@ export function getAllQuestions(mode: PracticeMode): Question[] {
       }
     ],
     assignment: [
+      {
+        question: "Which of the following is considered a key enabler of the Internet of Things (IoT)?",
+        options: ["Smartphones", "RFID", "Wi-Fi Routers", "Blockchain"],
+        explanation: "RFID is one of the early and fundamental technologies enabling IoT by allowing automatic identification and tracking of 'things'.",
+        correctAnswer: 1
+      }
+,
+{
+  question: "What is the primary function of an actuator in an IoT system?",
+  options: ["To detect changes in the environment", "To process data from sensors", "To convert energy into mechanical motion", "To provide internet connectivity"],
+  explanation: "An actuator converts a control signal into mechanical motion, acting on the environment.",
+  correctAnswer: 2
+}
+,
+{
+  question: "Which of the following sensors is a vector sensor?",
+  options: ["Thermocouple", "Barometer", "Accelerometer", "Light Dependent Resistor"],
+  explanation: "An accelerometer is a vector sensor as it measures acceleration in multiple directions (x, y, z).",
+  correctAnswer: 2
+}
+,
+{
+  question: "Which addressing strategy helps avoid address wastage in large-scale IoT deployments?",
+  options: ["IPv4 Static Allocation", "Broadcast Addressing", "Gateway Prefix Allotment", "Multicast DNS"],
+  explanation: "Gateway prefix allotment allows local addresses within a gateway's domain to be reused in another domain, preventing address exhaustion.",
+  correctAnswer: 2
+}
+,
+{
+  question: "What type of error occurs when a sensor’s output differs based on the input trend (increasing or decreasing)?",
+  options: ["Drift", "Hysteresis", "Offset", "Quantization"],
+  explanation: "Hysteresis error is observed when a sensor gives different readings for the same input based on its previous states.",
+  correctAnswer: 1
+}
+,
+{
+  question: "Which of the following technologies is part of the IoT but with a narrower focus on device-to-device communication?",
+  options: ["Web of Things", "Cyber-Physical Systems", "Machine-to-Machine (M2M)", "Smart Grid"],
+  explanation: "M2M focuses specifically on machine-to-machine communication and is a subset of IoT.",
+  correctAnswer: 2
+}
+,
+{
+  question: "Which actuator type is best suited for controlling water flow in response to electrical signals?",
+  options: ["Thermal Actuator", "Electric Actuator", "Hydraulic Actuator", "Mechanical Actuator"],
+  explanation: "Electric actuators are commonly used in solenoid valves to control water flow based on electrical input.",
+  correctAnswer: 1
+}
+,
+{
+  question: "Why is IPv6 more suited to IoT than IPv4?",
+  options: ["It supports wireless communication", "It is more secure by design", "It offers more address space", "It has faster data rates"],
+  explanation: "IPv6 provides a vastly larger address space (2^128 addresses) compared to IPv4, making it ideal for billions of IoT devices.",
+  correctAnswer: 2
+}
+,
+{
+  question: "Which of the following features does NOT apply to a sensor?",
+  options: ["Sensitive to measured property", "Affects the measured property", "Insensitive to irrelevant properties", "Converts physical quantity to signal"],
+  explanation: "A sensor should not influence or affect the measured property; it should only detect it.",
+  correctAnswer: 1
+}
+,
+{
+  question: "Which sensor would be used to detect proximity using sound waves?",
+  options: ["Piezoelectric Sensor", "Ultrasonic Sensor", "Photoresistor", "Accelerometer"],
+  explanation: "Ultrasonic sensors use sound waves to measure distance and detect objects.",
+  correctAnswer: 1
+}
+,
+
+  {
+    "question": "Which of the following protocols enables low-power devices to connect to the Internet using IPv6?",
+    "options": ["MQTT", "6LoWPAN", "ZigBee", "CoAP"],
+    "explanation": "6LoWPAN allows small, low-power devices to communicate using IPv6, making them Internet-accessible.",
+    "correctAnswer": 1
+  },
+  {
+    "question": "What type of addressing does 6LoWPAN support within a PAN domain?",
+    "options": ["64-bit global and 32-bit dynamic", "64-bit global and 16-bit short", "128-bit only", "32-bit only"],
+    "explanation": "6LoWPAN supports globally unique 64-bit addressing and 16-bit short addressing specific to a PAN.",
+    "correctAnswer": 1
+  },
+  {
+    "question": "Which routing protocol used in 6LoWPAN is derived from AODV?",
+    "options": ["RIP", "OSPF", "LOADng", "RPL"],
+    "explanation": "LOADng is a lightweight adaptation of AODV designed for low-power and lossy networks in IoT.",
+    "correctAnswer": 2
+  },
+  {
+    "question": "Which statement about passive RFID tags is correct?",
+    "options": ["They contain an internal power supply", "They are powered inductively by the reader", "They are rarely used in IoT", "They actively broadcast signals"],
+    "explanation": "Passive RFID tags do not have their own power source and are powered by the reader’s signal.",
+    "correctAnswer": 1
+  },
+  {
+    "question": "What messaging protocol does MQTT follow?",
+    "options": ["Request/Response", "Push/Pull", "Publish/Subscribe", "Client/Server"],
+    "explanation": "MQTT is a lightweight messaging protocol that follows a Publish/Subscribe architecture for IoT communications.",
+    "correctAnswer": 2
+  },
+  {
+    "question": "Which of the following CoAP message types is used when the server response is delayed and not part of the ACK?",
+    "options": ["Confirmable", "Non-Confirmable", "Piggyback", "Separate"],
+    "explanation": "The 'Separate' message type in CoAP allows a delayed server response separate from the acknowledgment.",
+    "correctAnswer": 3
+  },
+  {
+    "question": "Which messaging protocol is designed specifically for high security with broadcast encryption in IoT?",
+    "options": ["MQTT", "SMQTT", "XMPP", "CoAP"],
+    "explanation": "SMQTT is a secure version of MQTT using attribute-based encryption that supports broadcast encryption.",
+    "correctAnswer": 1
+  },
+  {
+    "question": "In AMQP, which frame type is responsible for initiating a new link?",
+    "options": ["Open", "Attach", "Transfer", "Begin"],
+    "explanation": "The 'Attach' frame type in AMQP is used to initiate a new communication link between peers.",
+    "correctAnswer": 1
+  },
+  {
+    "question": "What is the function of a ZigBee Coordinator (ZC) in a ZigBee network?",
+    "options": ["Relays messages between nodes", "Provides external communication", "Initiates and manages the network", "Performs energy harvesting"],
+    "explanation": "A ZigBee Coordinator forms and manages the network and acts as the root node and Trust Center.",
+    "correctAnswer": 2
+  },
+  {
+    "question": "Which of the following best describes the CoAP protocol?",
+    "options": ["Binary publish-subscribe protocol", "RESTful protocol built over TCP", "Lightweight HTTP-like protocol over UDP", "XML-based messaging system"],
+    "explanation": "CoAP is a lightweight application-layer protocol similar to HTTP but designed to run over UDP for constrained devices.",
+    "correctAnswer": 2
+  },
+  
+    {
+      "question": "Which layer of the WirelessHART protocol ensures collision-free and deterministic communication?",
+      "options": ["Network Layer", "Application Layer", "Data Link Layer", "Physical Layer"],
+      "explanation": "The Data Link Layer in WirelessHART uses super-frames and TDMA to ensure collision-free and deterministic communication.",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which modulation technique is used by Z-Wave?",
+      "options": ["QPSK", "GFSK", "BPSK", "OQPSK"],
+      "explanation": "Z-Wave uses Gaussian Frequency Shift Keying (GFSK) modulation.",
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the maximum number of nodes supported in a Z-Wave network?",
+      "options": ["64", "128", "232", "512"],
+      "explanation": "Z-Wave networks can support up to 232 nodes, making it scalable for home automation.",
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the purpose of 'Healing' in Z-Wave networks?",
+      "options": ["Encrypting transmissions", "Speeding up data", "Bypassing radio dead-spots", "Reducing power consumption"],
+      "explanation": "Healing in Z-Wave refers to rerouting messages through different nodes to bypass obstructions or dead-spots.",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol operates in the 2.4 GHz ISM band and employs channel hopping after each message?",
+      "options": ["ZigBee", "Bluetooth", "WirelessHART", "ISA100.11a"],
+      "explanation": "WirelessHART operates in the 2.4 GHz ISM band and switches channels after each message for better reliability.",
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the main difference between passive and active NFC devices?",
+      "options": ["Data rate", "Range", "Power source", "Antenna design"],
+      "explanation": "Active NFC devices have their own power source and can read/write, while passive ones rely on the reader's energy.",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which Bluetooth mode allows a device to wake up only at predefined intervals to save power?",
+      "options": ["Sniff", "Active", "Hold", "Park"],
+      "explanation": "Sniff mode in Bluetooth allows a device to listen at defined intervals, reducing power consumption.",
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the maximum number of slave devices that can connect to a Bluetooth master in a Piconet?",
+      "options": ["5", "7", "10", "15"],
+      "explanation": "A Bluetooth Piconet can support up to 7 active slave devices connected to one master.",
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which topology allows Bluetooth devices from multiple Piconets to communicate through shared nodes?",
+      "options": ["Piconet", "Tree", "Scatternet", "Star"],
+      "explanation": "Scatternet is a network of interconnected Piconets where nodes act as bridges.",
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which layer in Bluetooth is responsible for providing protocol multiplexing and connection services?",
+      "options": ["Baseband", "RFCOMM", "L2CAP", "SDP"],
+      "explanation": "L2CAP (Logical Link Control and Adaptation Protocol) supports multiplexing, segmentation/reassembly, and group abstractions.",
+      "correctAnswer": 2
+    }
+    ,
+    
+      {
+        "question": "In push-based target tracking, which structure is commonly used for communication among sensor nodes?",
+        "options": ["Tree structure", "Mesh structure", "Cluster structure", "Face structure"],
+        "explanation": "In push-based target tracking, a cluster structure is typically used where nodes compute and push data to the sink.",
+        "correctAnswer": 2
+      },
+      {
+        "question": "Which two sensors were used in the AID prototype for agricultural intrusion detection?",
+        "options": ["Accelerometer and Gyroscope", "PIR and Ultrasonic", "Humidity and Temperature", "Magnetic and LDR"],
+        "explanation": "The AID system used Passive Infrared (PIR) sensors to detect intrusions and Ultrasonic sensors to measure distance.",
+        "correctAnswer": 1
+      },
+      {
+        "question": "What type of sensors are scalar sensor (SS) nodes in Wireless Multimedia Sensor Networks (WMSNs)?",
+        "options": ["High-power directional multimedia sensors", "Temperature and light sensors with omni-directional range", "Pressure and gas sensors with directional range", "Video and audio sensors"],
+        "explanation": "Scalar sensor nodes sense temperature, light, vibration etc., with omni-directional sensing and low power.",
+        "correctAnswer": 1
+      },
+      {
+        "question": "Which of the following is a key challenge in underwater acoustic sensor networks (UASNs)?",
+        "options": ["High data rate", "Electromagnetic interference", "Internal solitons affecting acoustic signal propagation", "Lack of sensor mobility"],
+        "explanation": "Internal solitons significantly scatter underwater acoustic signals, degrading communication in UASNs.",
+        "correctAnswer": 2
+      },
+      {
+        "question": "Which algorithm was used for distributed topology management in WMSNs?",
+        "options": ["Backoff Contention Algorithm", "Greedy Forwarding", "Coalition Formation Game", "Shortest Path Routing"],
+        "explanation": "Coalition Formation Game was used between CS and SS nodes to manage coverage and connectivity in WMSNs.",
+        "correctAnswer": 2
+      },
+      {
+        "question": "Which localization scheme uses dead-reckoning and trilateration in underwater environments?",
+        "options": ["OGDC", "MobiL", "HASL", "OGDC+"],
+        "explanation": "HASL (High-Speed AUV-Based Silent Localization) uses GPS, dead-reckoning, and trilateration for position estimation.",
+        "correctAnswer": 2
+      },
+      {
+        "question": "In barrier coverage, what does '2-barrier coverage' imply?",
+        "options": ["Each point is covered twice", "The region is divided into 2 sectors", "Each point is covered by at least 2 sensors", "Two sensors are deployed per line-of-sight"],
+        "explanation": "2-barrier coverage means that each point on the barrier is covered by at least two sensors.",
+        "correctAnswer": 2
+      },
+      {
+        "question": "Which protocol architecture in FANETs ensures long-range, resilient communication using UAVs?",
+        "options": ["StarNet", "SkyComm", "FANET", "ZigBee UAV"],
+        "explanation": "FANETs (Flying Ad Hoc Networks) ensure resilient and long-range communication using a fleet of UAVs.",
+        "correctAnswer": 2
+      },
+      {
+        "question": "What is a significant constraint of UAV networks as mentioned in the notes?",
+        "options": ["Low data rate", "Highly predictable mobility", "Frequent link breakages and environmental sensitivity", "Limited sensor deployment"],
+        "explanation": "UAV networks suffer from frequent link breakages and are highly sensitive to environmental effects like wind and rain.",
+        "correctAnswer": 2
+      },
+      {
+        "question": "Which category of M2M nodes is most suitable for high-quality multimedia applications?",
+        "options": ["Low-end nodes", "Mid-end nodes", "High-end nodes", "Passive RFID nodes"],
+        "explanation": "High-end M2M nodes are capable of handling multimedia data and are used in applications like ITS and military.",
+        "correctAnswer": 2
+      }
+        ,
+        
+          {
+            "question": "Which challenge in IoT involves multiple devices using different configurations and standards?",
+            "options": ["Security Threats", "Global Heterogeneity", "Limited Connectivity", "Power Constraints"],
+            "explanation": "Global Heterogeneity refers to different IoT devices and protocols, making seamless communication difficult.",
+            "correctAnswer": 1
+          },
+          {
+            "question": "Which type of interoperability involves understanding the meaning of messages exchanged between devices?",
+            "options": ["User Interoperability", "Device Interoperability", "Syntactic Interoperability", "Semantic Interoperability"],
+            "explanation": "Semantic Interoperability ensures devices understand the meaning of exchanged messages.",
+            "correctAnswer": 3
+          },
+          {
+            "question": "Which of the following is used to uniquely identify IoT devices for discovery?",
+            "options": ["MAC Address", "HTTP Header", "Electronic Product Code", "PIN Code"],
+            "explanation": "Electronic Product Codes (EPCs) are used for unique identification of IoT devices during discovery.",
+            "correctAnswer": 2
+          },
+          {
+            "question": "Which tool provides a virtual abstraction layer for heterogeneous devices in home networks?",
+            "options": ["Zigbee Hub", "Universal Device Translator", "Universal Middleware Bridge", "Protocol Adapter"],
+            "explanation": "The Universal Middleware Bridge (UMB) allows seamless communication among heterogeneous devices.",
+            "correctAnswer": 2
+          },
+          {
+            "question": "Which Arduino function is used to set a pin as input or output?",
+            "options": ["digitalWrite()", "pinMode()", "setup()", "loop()"],
+            "explanation": "The pinMode() function configures a specified pin to behave either as an input or output.",
+            "correctAnswer": 1
+          },
+          {
+            "question": "Which Arduino IDE feature checks for compilation errors?",
+            "options": ["Upload", "Verify", "Serial Monitor", "Sketch Analyzer"],
+            "explanation": "The 'Verify' button checks the code for compilation errors before uploading to the board.",
+            "correctAnswer": 1
+          },
+          {
+            "question": "Which command generates a random number within a specified range in Arduino?",
+            "options": ["randNum()", "generateRandom()", "random()", "setRandom()"],
+            "explanation": "The random() function is used in Arduino to generate pseudo-random numbers within a range.",
+            "correctAnswer": 2
+          },
+          {
+            "question": "What kind of signal does a DHT sensor provide to the Arduino board?",
+            "options": ["Analog", "Digital", "PWM", "Serial"],
+            "explanation": "The DHT temperature and humidity sensor provides a digital signal to the Arduino.",
+            "correctAnswer": 1
+          },
+          {
+            "question": "In the Arduino Servo library, which function rotates the servo motor?",
+            "options": ["rotate()", "setAngle()", "servoMove()", "write()"],
+            "explanation": "The write() function is used to rotate the servo to a specified angle.",
+            "correctAnswer": 3
+          },
+          {
+            "question": "Which type of interoperability addresses message formatting between user and device?",
+            "options": ["Semantic Interoperability", "Syntactic Interoperability", "Middleware Translation", "Universal Standardization"],
+            "explanation": "Syntactic Interoperability ensures that the message formats are understood and executable by both user and device.",
+            "correctAnswer": 1
+          },
+
+          
+            {
+              "question": "Which Python library is used to control Raspberry Pi GPIO pins?",
+              "options": ["RPi.GPIO", "PiControl", "GPIOManager", "RPiControl"],
+              "explanation": "RPi.GPIO is the standard Python library used to control GPIO pins on the Raspberry Pi.",
+              "correctAnswer": 0
+            },
+            {
+              "question": "Which data type in Python is immutable?",
+              "options": ["List", "Tuple", "Dictionary", "Set"],
+              "explanation": "Tuples in Python are immutable, meaning they cannot be changed after creation.",
+              "correctAnswer": 1
+            },
+            {
+              "question": "Which function is used to handle exceptions in Python?",
+              "options": ["if-else", "try-except", "check-raise", "loop-catch"],
+              "explanation": "The 'try-except' block is used to catch and handle exceptions in Python.",
+              "correctAnswer": 1
+            },
+            {
+              "question": "Which mode is used to open a file for both reading and writing in Python?",
+              "options": ["r+", "rw", "w+", "ra"],
+              "explanation": "The 'r+' mode in Python opens a file for both reading and writing.",
+              "correctAnswer": 0
+            },
+            {
+              "question": "Which Python function is used to resize an image using PIL?",
+              "options": ["image.modify()", "image.scale()", "image.resize()", "image.changeSize()"],
+              "explanation": "The 'resize()' method is used to change the dimensions of an image in PIL.",
+              "correctAnswer": 2
+            },
+            {
+              "question": "What is the output of: print('Python'[2:4])?",
+              "options": ["Py", "th", "yt", "ho"],
+              "explanation": "The slice [2:4] extracts characters at index 2 and 3, which are 't' and 'h'.",
+              "correctAnswer": 1
+            },
+            {
+              "question": "Which command is used to capture an image using the Pi camera from the terminal?",
+              "options": ["picapture", "rpipic -o image.jpg", "raspistill -o image.jpg", "camera.sh"],
+              "explanation": "'raspistill -o image.jpg' is the standard command to capture an image using the PiCam.",
+              "correctAnswer": 2
+            },
+            {
+              "question": "Which of the following is true about global variables in Python?",
+              "options": ["They are only accessible inside functions", "They must be declared inside every function", "They are declared outside functions and accessible globally", "They can't be used with modules"],
+              "explanation": "Global variables are declared outside any function and can be accessed from inside or outside functions.",
+              "correctAnswer": 2
+            },
+            {
+              "question": "Which Python function generates random integers between two values?",
+              "options": ["random.integer()", "random.random()", "random.randint()", "random.number()"],
+              "explanation": "'random.randint()' generates a random integer between the specified range.",
+              "correctAnswer": 2
+            },
+            {
+              "question": "Which protocol is used for network socket communication in Python?",
+              "options": ["UDP", "HTTP", "TCP", "ICMP"],
+              "explanation": "TCP is commonly used for reliable socket communication in Python using SOCK_STREAM.",
+              "correctAnswer": 2
+            }
+                    
+              
 
     ],
   };
