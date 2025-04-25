@@ -1955,7 +1955,382 @@ export function getAllQuestions(mode: PracticeMode): Question[] {
               "options": ["UDP", "HTTP", "TCP", "ICMP"],
               "explanation": "TCP is commonly used for reliable socket communication in Python using SOCK_STREAM.",
               "correctAnswer": 2
-            }
+            },
+
+            
+              {
+                "question": "Which Python function is used to read data from a DHT sensor using the Adafruit library?",
+                "options": ["read_data()", "get_sensor()", "read_retry()", "fetch_data()"],
+                "explanation": "The Adafruit_DHT.read_retry() function is used to read temperature and humidity from DHT sensors.",
+                "correctAnswer": 2
+              },
+              {
+                "question": "Which socket type is used for UDP communication in Python?",
+                "options": ["SOCK_STREAM", "SOCK_RAW", "SOCK_SEQPACKET", "SOCK_DGRAM"],
+                "explanation": "SOCK_DGRAM is used for UDP communication in socket programming.",
+                "correctAnswer": 3
+              },
+              {
+                "question": "Which Python library is used for 2D plotting of sensor data?",
+                "options": ["NumPy", "SciPy", "matplotlib", "seaborn"],
+                "explanation": "matplotlib is the commonly used Python library for 2D plotting.",
+                "correctAnswer": 2
+              },
+              {
+                "question": "Which protocol is used by OpenFlow to place flow-rules in SDN switches?",
+                "options": ["HTTP", "TCP", "OpenFlow", "SNMP"],
+                "explanation": "OpenFlow is the standard protocol used to communicate flow-rules in SDN.",
+                "correctAnswer": 2
+              },
+              {
+                "question": "What does the 'hard timeout' in OpenFlow specify?",
+                "options": ["Timeout if packet is lost", "Timeout if no flow is received", "Time after which all flow-rules are deleted", "Time after which TCAM resets"],
+                "explanation": "Hard timeout defines the total time after which flow-rules are deleted from the switch.",
+                "correctAnswer": 2
+              },
+              {
+                "question": "Which Python command is used to split string data received from sensors?",
+                "options": ["splitdata()", "slice()", "separate()", "split()"],
+                "explanation": "The split() method is used to divide strings based on a specified delimiter.",
+                "correctAnswer": 3
+              },
+              {
+                "question": "Which SDN controller is known for its high popularity and wide adoption?",
+                "options": ["FloodLight", "Pox", "OpenDayLight", "ONOS"],
+                "explanation": "OpenDayLight is one of the most popular SDN controllers used in industry and academia.",
+                "correctAnswer": 2
+              },
+              {
+                "question": "In SDN, what is the purpose of TCAM at the switch?",
+                "options": ["Data encryption", "Power saving", "Fast packet matching", "Routing only multicast traffic"],
+                "explanation": "TCAM is used in SDN switches for high-speed packet matching of flow rules.",
+                "correctAnswer": 2
+              },
+              {
+                "question": "What is the main feature of Soft-WSN in IoT environments?",
+                "options": ["Packet compression", "Topology visualization", "Real-time sensor and delay management", "Static routing"],
+                "explanation": "Soft-WSN allows real-time sensor, delay, and sleep-active management in WSNs.",
+                "correctAnswer": 2
+              },
+              {
+                "question": "What is the key role of Northbound APIs in SDN?",
+                "options": ["Communicate with switches", "Forward packets", "Enable application-controller communication", "Enable switch-to-switch routing"],
+                "explanation": "Northbound APIs are used for communication between the SDN controller and applications.",
+                "correctAnswer": 2
+              },
+
+              
+                {
+                  "question": "Which component of SDN is responsible for communication with physical devices in ODIN architecture?",
+                  "options": ["ODIN Master", "ODIN Agent", "OpenFlow Switch", "SDN Controller"],
+                  "explanation": "ODIN Agent resides on access points and communicates with ODIN Master to manage device-level interactions.",
+                  "correctAnswer": 1
+                },
+                {
+                  "question": "Which technique is used by Mobi-Flow for predicting the next user location?",
+                  "options": ["GPS Tracking", "Kalman Filter", "Order-K Markov Predictor", "Time Series Regression"],
+                  "explanation": "Mobi-Flow uses an Order-K Markov Predictor which utilizes the last k location points to predict the next location.",
+                  "correctAnswer": 2
+                },
+                {
+                  "question": "Which characteristic is not part of NIST’s essential cloud computing characteristics?",
+                  "options": ["On-demand self-service", "Limited network access", "Resource pooling", "Rapid elasticity"],
+                  "explanation": "Limited network access is not one of the essential cloud computing characteristics defined by NIST.",
+                  "correctAnswer": 1
+                },
+                {
+                  "question": "Which service model allows consumers to control the deployed applications but not the cloud infrastructure?",
+                  "options": ["IaaS", "PaaS", "SaaS", "DBaaS"],
+                  "explanation": "In Platform-as-a-Service (PaaS), users can deploy and control their applications but not the underlying infrastructure.",
+                  "correctAnswer": 1
+                },
+                {
+                  "question": "What does CloudSim primarily simulate?",
+                  "options": ["Cyber-attacks", "Sensor networks", "Cloud computing environments", "Blockchain systems"],
+                  "explanation": "CloudSim is a simulation toolkit for modeling and simulating cloud computing infrastructure and services.",
+                  "correctAnswer": 2
+                },
+                {
+                  "question": "Which deployment model combines features of both private and public clouds?",
+                  "options": ["Community Cloud", "Distributed Cloud", "Hybrid Cloud", "Multi-cloud"],
+                  "explanation": "Hybrid Cloud is a combination of private and public clouds allowing data and application portability.",
+                  "correctAnswer": 2
+                },
+                {
+                  "question": "Which platform is considered as IaaS and offers virtual machine deployment and management?",
+                  "options": ["Microsoft Azure", "OpenStack", "CloudAnalyst", "CloudSim"],
+                  "explanation": "OpenStack is an open-source cloud platform that provides IaaS by enabling VM deployment and management.",
+                  "correctAnswer": 1
+                },
+                {
+                  "question": "Which of the following ensures that only authorized users can access cloud resources at the right time?",
+                  "options": ["IAM", "Firewall", "VPN", "Data Provenance"],
+                  "explanation": "Identity and Access Management (IAM) ensures that only authorized users can access resources at the right time.",
+                  "correctAnswer": 0
+                },
+                {
+                  "question": "Which type of flow in data centers uses wildcard rules due to its frequent and short nature?",
+                  "options": ["Elephant Flow", "Hybrid Flow", "Mice Flow", "Control Flow"],
+                  "explanation": "Mice Flows are frequent, short-lived flows that are best handled using wildcard rules for efficiency.",
+                  "correctAnswer": 2
+                },
+                {
+                  "question": "Which cloud simulator is an extension of NS2 and is focused on energy consumption?",
+                  "options": ["GreenCloud", "CloudSim", "CloudAnalyst", "GroudSim"],
+                  "explanation": "GreenCloud is a packet-level cloud simulator developed as an extension of NS2 with energy consumption monitoring.",
+                  "correctAnswer": 0
+                },
+
+                
+                  {
+                    "question": "Which OpenStack component provides identity and authentication services?",
+                    "options": ["Nova", "Glance", "Keystone", "Neutron"],
+                    "explanation": "Keystone is the identity service in OpenStack responsible for authentication and authorization.",
+                    "correctAnswer": 2
+                  },
+                  {
+                    "question": "Which OpenStack component is used to launch and manage compute instances?",
+                    "options": ["Cinder", "Swift", "Nova", "Ceilometer"],
+                    "explanation": "Nova is the compute component of OpenStack that allows users to launch virtual machine instances.",
+                    "correctAnswer": 2
+                  },
+                  {
+                    "question": "What is the primary purpose of the Heat component in OpenStack?",
+                    "options": ["Block storage", "Orchestration", "Monitoring", "Authentication"],
+                    "explanation": "Heat provides orchestration in OpenStack and is used for automating cloud application deployment.",
+                    "correctAnswer": 1
+                  },
+                  {
+                    "question": "Which cloud computing service model provides the highest level of control to the end user?",
+                    "options": ["SaaS", "PaaS", "IaaS", "DaaS"],
+                    "explanation": "IaaS (Infrastructure-as-a-Service) provides the user control over OS, storage, and deployed applications.",
+                    "correctAnswer": 2
+                  },
+                  {
+                    "question": "What distinguishes Sensor-Cloud from traditional Wireless Sensor Networks (WSNs)?",
+                    "options": ["Lower latency", "Virtualization and multi-user support", "Single application focus", "Direct internet access"],
+                    "explanation": "Sensor-Cloud introduces virtualization, allowing a single sensor to serve multiple users and applications.",
+                    "correctAnswer": 1
+                  },
+                  {
+                    "question": "What is the main purpose of internal caching in Sensor-Cloud?",
+                    "options": ["To store data permanently", "To reduce sensor access by reusing cached values", "To provide user authentication", "To compress data"],
+                    "explanation": "Internal caching helps serve user requests without querying physical sensors repeatedly, reducing overhead.",
+                    "correctAnswer": 1
+                  },
+                  {
+                    "question": "In Fog computing, which type of data is processed at the nearest fog node?",
+                    "options": ["Time-insensitive", "Low-priority", "Very time-sensitive", "Historical"],
+                    "explanation": "Very time-sensitive data is processed at the nearest fog node to reduce latency and enable quick decisions.",
+                    "correctAnswer": 2
+                  },
+                  {
+                    "question": "Which of the following is a key advantage of Fog computing over Cloud computing?",
+                    "options": ["Higher cost", "Slower processing", "Better support for mobility and real-time decision making", "Centralized storage only"],
+                    "explanation": "Fog computing supports real-time decision making, mobility, and lower latency by operating closer to data sources.",
+                    "correctAnswer": 2
+                  },
+                  {
+                    "question": "Which pricing attribute in Sensor-Cloud is associated with the use of cloud infrastructure?",
+                    "options": ["pH", "pI", "pC", "pS"],
+                    "explanation": "pI refers to the pricing attributed to the infrastructure usage in a Sensor-Cloud environment.",
+                    "correctAnswer": 1
+                  },
+                  {
+                    "question": "What is a major challenge of Fog computing related to node failure?",
+                    "options": ["Low bandwidth", "High cost", "Lack of sensors", "Fault tolerance"],
+                    "explanation": "Fog computing must ensure that failure of one node does not affect the entire network, emphasizing fault tolerance.",
+                    "correctAnswer": 3
+                  },
+                  
+                    {
+                      "question": "Which of the following best describes a smart city?",
+                      "options": ["A city with advanced vehicles", "A city with only renewable energy", "A city using ICT to make infrastructure more efficient", "A city without pollution"],
+                      "explanation": "A smart city uses Information and Communication Technology (ICT) to make infrastructure interactive and efficient.",
+                      "correctAnswer": 2
+                    },
+                    {
+                      "question": "In the smart city analogy, what do 'sensors and tags' represent?",
+                      "options": ["Brain", "Nerves", "Skin", "Sensory Organs"],
+                      "explanation": "In the human-to-smart city analogy, 'sensors and tags' are equivalent to sensory organs.",
+                      "correctAnswer": 3
+                    },
+                    {
+                      "question": "Which functional layer of smart parking includes sensors and crowd sensing?",
+                      "options": ["Service Dissemination", "System Deployment", "Information Collection", "Pricing Strategies"],
+                      "explanation": "The Information Collection layer includes sensors, parking meters, and crowd sensing for data gathering.",
+                      "correctAnswer": 2
+                    },
+                    {
+                      "question": "Which layer in the body and brain architecture of connected vehicles handles sensor control and monitoring?",
+                      "options": ["Sense and Execution", "Decision Layer", "Transmission Layer", "Cognitive Layer"],
+                      "explanation": "The Decision Layer manages the control and monitoring of sensors.",
+                      "correctAnswer": 1
+                    },
+                    {
+                      "question": "Which protocol is a key standard in DSRC for vehicular communication?",
+                      "options": ["IEEE 802.11n", "IEEE 1609.3", "IEEE 802.15.4", "IEEE 1602.1"],
+                      "explanation": "IEEE 1609.3 is part of the DSRC family that supports networking services in vehicular communication.",
+                      "correctAnswer": 1
+                    },
+                    {
+                      "question": "What is a key advantage of using Content Centric Networking (CCN) in VANETs?",
+                      "options": ["Fixed routing paths", "Location-based addressing", "Efficient data dissemination via in-network caching", "Exclusive IP routing"],
+                      "explanation": "CCN allows in-network caching and efficient dissemination of data based on content names rather than location.",
+                      "correctAnswer": 2
+                    },
+                    {
+                      "question": "Which energy management technique uses sun, wind, and RF for harvesting in smart cities?",
+                      "options": ["Predictive modeling", "Ambient energy harvesting", "Low-power transceivers", "Scheduling optimization"],
+                      "explanation": "Ambient energy harvesting uses natural sources like sunlight, wind, and RF signals to power IoT devices.",
+                      "correctAnswer": 1
+                    },
+                    {
+                      "question": "Which HAN standard uses the IEEE 802.15.4 standard for its physical and MAC layers?",
+                      "options": ["X-10", "LonWorks", "ZigBee", "DLNA"],
+                      "explanation": "ZigBee uses IEEE 802.15.4 for its Physical and MAC layers.",
+                      "correctAnswer": 2
+                    },
+                    {
+                      "question": "Which smart city application uses auto routing and service charging in real time?",
+                      "options": ["Smart Health", "Smart Agriculture", "Smart Parking Lots", "Smart Energy"],
+                      "explanation": "Smart Parking Lots include auto-routing of vehicles and auto-charging for services provided.",
+                      "correctAnswer": 2
+                    },
+                    {
+                      "question": "Which architecture enables the seamless integration of wired and wireless technologies in home automation?",
+                      "options": ["HAN", "DomoNet", "Project HYDRA", "Jini"],
+                      "explanation": "Home Area Networks (HANs) enable seamless integration of wired and wireless technologies for home automation.",
+                      "correctAnswer": 0
+                    },
+                    
+                      {
+                        "question": "What is a key feature of a Smart Grid compared to a traditional electrical grid?",
+                        "options": ["Uni-directional communication", "Manual monitoring", "Bidirectional energy and communication flow", "Centralized energy distribution"],
+                        "explanation": "Smart Grid enables bidirectional flows of energy and uses two-way communication and control capabilities.",
+                        "correctAnswer": 2
+                      },
+                      {
+                        "question": "Which of the following is NOT a benefit of Smart Grid to the consumer?",
+                        "options": ["Real-time information on energy usage", "Ability to control smart appliances", "Higher electricity rates", "Different pricing options"],
+                        "explanation": "Smart Grid helps consumers lower their energy bills with real-time usage data and flexible pricing, not higher rates.",
+                        "correctAnswer": 2
+                      },
+                      {
+                        "question": "What role does the Phasor Measurement Unit (PMU) play in Smart Grids?",
+                        "options": ["Provides internet connectivity", "Improves signal strength", "Monitors voltage and current with high sampling rate", "Blocks cyber attacks"],
+                        "explanation": "PMU samples voltage and current at a fixed rate and helps provide a dynamic snapshot of the grid for monitoring.",
+                        "correctAnswer": 2
+                      },
+                      {
+                        "question": "Which component acts as a centralized coordinator in Smart Grid communication?",
+                        "options": ["Smart Meter", "Gateway", "Data Aggregator Unit", "Meter Data Management System (MDMS)"],
+                        "explanation": "MDMS acts as the centralized system for managing meter data and pricing decisions.",
+                        "correctAnswer": 3
+                      },
+                      {
+                        "question": "Which protocol used in Smart Home Appliances supports IPv6 addressing and 6LowPAN?",
+                        "options": ["C-Bus", "Zigbee", "Thread", "Universal Power line Bus"],
+                        "explanation": "Thread is based on IPv6 addressing and uses 6LowPAN for low-power wireless personal area networking.",
+                        "correctAnswer": 2
+                      },
+                      {
+                        "question": "What is net metering in the context of Smart Grid?",
+                        "options": ["Measuring battery power", "Monitoring internet data", "Tracking energy usage only", "Billing based on both in-flow and out-flow of energy"],
+                        "explanation": "Net metering tracks both consumption and generation of energy, adjusting billing accordingly.",
+                        "correctAnswer": 3
+                      },
+                      {
+                        "question": "Which of the following is a property of Smart Grid that enables it to recover from faults?",
+                        "options": ["Self-healing", "Manual reset", "Uni-directional flow", "Centralized control only"],
+                        "explanation": "Self-healing is a property that allows the Smart Grid to detect and recover from disturbances automatically.",
+                        "correctAnswer": 0
+                      },
+                      {
+                        "question": "How does a Smart Home reduce electricity costs during high-demand periods?",
+                        "options": ["By turning off all devices", "Using manual switches", "Running appliances during peak hours", "Shifting appliance use to off-peak hours"],
+                        "explanation": "Smart appliances and home management systems can schedule energy use during off-peak hours for cost efficiency.",
+                        "correctAnswer": 3
+                      },
+                      {
+                        "question": "Which of the following is a cyber-security threat in Smart Grid systems?",
+                        "options": ["Data visualization", "Time synchronization attacks", "Power fluctuation", "User feedback"],
+                        "explanation": "Time synchronization attacks (TSAs) can cause incorrect control actions by tampering with PMU timing data.",
+                        "correctAnswer": 1
+                      },
+                      {
+                        "question": "Which communication network in a Smart Grid connects smart appliances within a home?",
+                        "options": ["Wide Area Network", "Neighborhood Area Network", "Home Area Network", "IP Backbone"],
+                        "explanation": "Home Area Networks (HANs) connect smart appliances and meters within a consumer's residence.",
+                        "correctAnswer": 2
+                      }
+                                        
+                      ,
+                      
+                        {
+                          "question": "What does Quantitative Analysis primarily involve?",
+                          "options": ["Descriptions and themes", "Visual data interpretation", "Numerical and statistical evaluation", "Video and audio analysis"],
+                          "explanation": "Quantitative analysis deals with numerical data and uses statistical methods like mean, variance, regression, etc.",
+                          "correctAnswer": 2
+                        },
+                        {
+                          "question": "Which of the following is NOT a property required to perform ANOVA?",
+                          "options": ["Homogeneity", "Independence", "Random sampling", "Negative correlation"],
+                          "explanation": "Negative correlation is not a requirement for ANOVA. The actual requirements are homogeneity, independence, and randomness.",
+                          "correctAnswer": 3
+                        },
+                        {
+                          "question": "Which component is used for estimating relationships between variables in statistics?",
+                          "options": ["Contingency table", "Regression analysis", "F-ratio", "Standard deviation"],
+                          "explanation": "Regression analysis estimates the relationship between a dependent variable and one or more independent variables.",
+                          "correctAnswer": 1
+                        },
+                        {
+                          "question": "Which measure represents the spread of values around the mean?",
+                          "options": ["Mean", "Variance", "Mode", "Frequency"],
+                          "explanation": "Variance is a measure that represents the average squared deviation from the mean, indicating data dispersion.",
+                          "correctAnswer": 1
+                        },
+                        {
+                          "question": "What is the purpose of using Pearson's correlation coefficient?",
+                          "options": ["Measure variable independence", "Describe data distribution", "Identify predictive relationships", "Calculate variance"],
+                          "explanation": "Pearson's correlation coefficient measures the strength of association between two continuous variables.",
+                          "correctAnswer": 2
+                        },
+                        {
+                          "question": "In the AgriSens system, what technology is used to send field data to farmers' phones?",
+                          "options": ["Bluetooth", "WiFi", "SMS", "RFID"],
+                          "explanation": "The AgriSens system uses SMS technology for sending data and updates to farmers.",
+                          "correctAnswer": 2
+                        },
+                        {
+                          "question": "Which parameter is monitored by AmbuSens for real-time patient tracking?",
+                          "options": ["Blood pressure", "Eye movement", "Galvanic Skin Response (GSR)", "Sleep cycles"],
+                          "explanation": "AmbuSens tracks physiological parameters like heart rate, ECG, temperature, and GSR.",
+                          "correctAnswer": 2
+                        },
+                        {
+                          "question": "Which sensor is depicted as a part of the integrated sensor node in AgriSens?",
+                          "options": ["Motion sensor", "Soil moisture sensor", "Smoke detector", "Body temperature sensor"],
+                          "explanation": "The AgriSens system includes a soil moisture sensor (EC-05) as part of its sensor node for irrigation monitoring.",
+                          "correctAnswer": 1
+                        },
+                        {
+                          "question": "What is the standard communication protocol used in AmbuSens WBAN?",
+                          "options": ["Zigbee", "WiFi", "Bluetooth (IEEE 802.15.1)", "LoRaWAN"],
+                          "explanation": "Bluetooth, conforming to IEEE 802.15.1, is used in AmbuSens for WBAN communication.",
+                          "correctAnswer": 2
+                        },
+                        {
+                          "question": "Which analytical method is used for visualizing interrelation between categorical variables?",
+                          "options": ["Regression", "Standard deviation", "Contingency tables", "Precision analysis"],
+                          "explanation": "Contingency tables (or cross-tabulations) are used to display frequency distributions and interrelations of categorical variables.",
+                          "correctAnswer": 2
+                        }
+                                            
+                                
+                            
+                      
                     
               
 
